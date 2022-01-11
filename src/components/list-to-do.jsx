@@ -1,12 +1,13 @@
 import React, {Component} from "react";
+import "../styles/style-list.css"
 
 export default class List extends Component{
     render(){
         return(
-            <div style={{backgroundColor:"chocolate", margin:10, padding:10}}>
-                {this.props.title}
-            </div>
-        )
+                <div className="col-6 list-to-do">
+                    {this.props.title}
+                </div>
+        )  
     }
 
 }
